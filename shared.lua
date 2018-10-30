@@ -34,3 +34,9 @@ Garages.Config.Locations = {
 	["Watercraft"] = {},
 	["Aircraft"] = {},
 }
+
+if not IsDuplicityVersion() then
+	AddEventHandler("onClientMapStart", function()
+		Garages.Data.ServerId = GetPlayerServerId(PlayerId())
+	end)
+end
