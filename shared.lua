@@ -35,6 +35,10 @@ Garages.Config.Locations = {
 	["Aircraft"] = {},
 }
 
+Garages.Config.Insurance = {
+	
+}
+
 if not IsDuplicityVersion() then
 	AddEventHandler("onClientMapStart", function()
 		Garages.Data.ServerId = GetPlayerServerId(PlayerId())
